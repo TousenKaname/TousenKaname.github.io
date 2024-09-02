@@ -28,7 +28,7 @@ My research areas include:
 
 # 🎓 Educations
 
-- *2022.06 - 2025.12*, East China Normal University, Shanghai, China.
+- *2022.09 - 2025.06*, East China Normal University, Shanghai, China.
 - *2018.09 - 2022.06*, Tianjin Polytechnic University, Tianjin, China.
  
 <span class='anchor' id='-lwzl'></span>
