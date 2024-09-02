@@ -98,8 +98,8 @@ My research areas include:
 
 # 💻 Internships
 
-- *2024.09 - Present*, Shanghai Artificial Intelligence Laboratory
+- *2024.09 - Present*, Shanghai Artificial Intelligence Laboratory.
 - *2024.07 - 2024.08*, Nomura Information Technology Shanghai Co., Ltd (NTSH)
-- *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory
-- *2023.09 - 2023.11*, Ubiquant Investment (Beijing) Corp
-- *2023.02 - 2023.06*, <a href="https://www.ilambda.com/About-us">iLambda</a> Corp
+- *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory.
+- *2023.09 - 2023.11*, Ubiquant Investment (Beijing) Corp.
+- *2023.02 - 2023.06*, <a href="https://www.ilambda.com/About-us">iLambda</a> Corp.
