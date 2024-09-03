@@ -33,9 +33,8 @@ My research areas include:
  
 <span class='anchor' id='-lwzl'></span>
 
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+# 🔥 News
+- I'm seeking a PhD advisor, as I'm eager to continue working in the field of CV or LLM.
 
 # 📝 Publications 
 
