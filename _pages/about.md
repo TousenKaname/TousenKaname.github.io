@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently studying at East China Normal University and interning at the Shanghai Artificial Intelligence Laboratory. My leader is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a>, and my mentor is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Jin Ye</a>.
+I am currently studying at East China Normal University and interning at the Shanghai Artificial Intelligence Laboratory. My leader is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a>, and my mentor is <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>.
 
 My research areas include:
 - Medical imaging
