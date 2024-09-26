@@ -51,7 +51,7 @@ My research areas include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/gmai-mmbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen P\*, Ye J\*, `Wang G*`, et al. GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI[J]. arXiv preprint arXiv:2408.03361, 2024. Submitted to NeurIPS2024.
+-	Chen P\*, Ye J\*, `Wang G*`, et al. GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI[J]. arXiv preprint arXiv:2408.03361, 2024. Accepted by NeurIPS2024.
 [[PDF]](https://arxiv.org/pdf/2408.03361) [[Homepage]](https://uni-medical.github.io/GMAI-MMBench.github.io/)
 
 </div>
