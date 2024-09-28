@@ -57,6 +57,22 @@ My research areas include:
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	Chen Y\*, `Wang G*`, Ji Y, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding. 2024. Submitted to ICLR 2025.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset. 2024. Submitted to ICLR 2025.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV 2023</div><img src='images/PRCV.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
