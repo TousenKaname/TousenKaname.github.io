@@ -60,7 +60,7 @@ My research areas include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen Y\*, `Wang G*`, Ji Y, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding. 2024. Submitted to ICLR 2025.
+-	Chen Y\*, `Wang G*`, Ji Y, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding. 2024. Submitted to ICLR 2025.[[PDF]](https://arxiv.org/pdf/2410.11761)
 
 </div>
 </div>
