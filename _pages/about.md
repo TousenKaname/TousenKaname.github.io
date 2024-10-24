@@ -113,7 +113,8 @@ My research areas include:
 
 # 💻 Internships
 
-- *2024.09 - Present*, Shanghai Artificial Intelligence Laboratory.
+- *2024.11 - Present*, Dobby is free!.
+- *2024.09 - 2024.11*, Shanghai Artificial Intelligence Laboratory.
 - *2024.07 - 2024.08*, Nomura Information Technology Shanghai Co., Ltd (NTSH)
 - *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory.
 - *2023.09 - 2023.11*, Ubiquant Investment (Beijing) Corp.
