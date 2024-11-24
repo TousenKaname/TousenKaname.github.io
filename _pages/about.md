@@ -64,7 +64,7 @@ My research areas include:
 
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/IMIS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/)
