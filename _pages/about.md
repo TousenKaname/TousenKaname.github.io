@@ -33,8 +33,6 @@ My research areas include:
  
 <span class='anchor' id='-lwzl'></span>
 
-# 🔥 News
-- I'm seeking a PhD supervisor, as I'm eager to continue working in the field of CV or LLM.
 
 # 📝 Publications 
 
