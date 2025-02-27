@@ -55,7 +55,7 @@ My research areas include:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	Chen Y\*, `Wang G*`, Ji Y\*, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding[J]. arXiv preprint arXiv:2410.11761, 2024.[[PDF]](https://arxiv.org/pdf/2410.11761)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/)
@@ -63,7 +63,7 @@ My research areas include:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/IMIS.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/IMIS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/)
@@ -71,10 +71,10 @@ My research areas include:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset. 2024. Submitted to XXXX 2025.[[PDF]](https://arxiv.org/pdf/2411.14522)
+-	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset. 2024.[[PDF]](https://arxiv.org/pdf/2411.14522)
 
 </div>
 </div>
