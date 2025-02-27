@@ -58,7 +58,7 @@ My research areas include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/WSI_VLLM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen Y\*, `Wang G*`, Ji Y\*, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding[J]. arXiv preprint arXiv:2410.11761, 2024.[[PDF]](https://arxiv.org/pdf/2410.11761)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/)
+-	Chen Y\*, `Wang G*`, Ji Y\*, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding[J]. arXiv preprint arXiv:2410.11761, 2024. Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2410.11761)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/)
 
 </div>
 </div>
@@ -66,7 +66,7 @@ My research areas include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/IMIS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/)
+-	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.  Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/)
 
 </div>
 </div>
