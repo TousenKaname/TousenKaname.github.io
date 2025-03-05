@@ -69,6 +69,14 @@ My research areas include:
 -	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.  Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/)
 
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/ophora.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model.  Submitted to XXXX2025.
+
+</div>
+
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
