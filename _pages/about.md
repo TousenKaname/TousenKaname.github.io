@@ -71,10 +71,10 @@ My research areas include:
 </div>
 
 </div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/ophora.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2025</div><img src='images/ophora.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model.  Submitted to XXXX2025.
+-	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model.  Accepted by MICCAI2025.
 
 </div>
 
