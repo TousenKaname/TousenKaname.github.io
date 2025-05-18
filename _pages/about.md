@@ -28,6 +28,7 @@ My research areas include:
 
 # 🎓 Educations
 
+- *2025.09 - present*, Stevens Institute of Technology, New Jersey, United States of America.
 - *2022.09 - 2025.06*, East China Normal University, Shanghai, China.
 - *2018.09 - 2022.06*, Tianjin Polytechnic University, Tianjin, China.
  
