@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently pursuing a master's degree at the School of Computer Science and Technology, <a href='https://english.ecnu.edu.cn/'>East China Normal University</a>, under the supervision of Associate Professor <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>. I completed my undergraduate studies at the School of Software and the School of Economics and Management (minor) at <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. Additionally, I interned for one year with the <a href='https://github.com/uni-medical'>GMAI</a> team at  <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>. My leader is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a>, and my mentor is <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>. Now I'm an intern at <a href='https://www.intsig.us/about-us'>INTSIG</a>, working as an intern for image security algorithms.
+I am currently pursuing a master's degree at the School of Computer Science and Technology, <a href='https://english.ecnu.edu.cn/'>East China Normal University</a>, under the supervision of Associate Professor <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>. I completed my undergraduate studies at the School of Software and the School of Economics and Management (minor) at <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. Additionally, I interned for one year with the <a href='https://github.com/uni-medical'>GMAI</a> team at  <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>. My leader is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a>, and my mentor is <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>.
 
 My research areas include:
 - Medical imaging
@@ -113,7 +113,7 @@ My research areas include:
 <span class='anchor' id='-ryjx'></span>
 
 # 🏅 Honors and Awards
-- National scholarship
+- Chinese National scholarship
 - Tianjin Municipal People's Government Scholarship
 - President's first scholarship
 - H Award in the American Collegiate Mathematical Contest in Modeling
@@ -129,7 +129,7 @@ My research areas include:
 
 # 💻 Internships
 
-- *2025.02 - Present*, INTSIG.
+- *2025.02 - 2025.06*, INTSIG.
 - *2024.09 - 2024.11*, Shanghai Artificial Intelligence Laboratory.
 - *2024.07 - 2024.08*, Nomura Information Technology Shanghai Co., Ltd (NTSH)
 - *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory.
