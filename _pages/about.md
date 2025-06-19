@@ -129,7 +129,7 @@ My research areas include:
 
 # 💻 Internships
 
-- *2025.02 - 2025.06*, INTSIG.
+- *2025.02 - 2025.06*, INTSIG	Information	Co.	Ltd.
 - *2024.09 - 2024.11*, Shanghai Artificial Intelligence Laboratory.
 - *2024.07 - 2024.08*, Nomura Information Technology Shanghai Co., Ltd (NTSH)
 - *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory.
