@@ -59,6 +59,14 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Signal Processing and Control</div><img src='images/WeChatb8c19012db49427f9eedb7fa8ab30d42.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	Zou S\*, `Wang G*`, Zhang Y\*, et al. Adaptive feature decoupled network for polyp segmentation. Accepted by Biomedical Signal Processing and Control.[[PDF]](https://www.sciencedirect.com/science/article/pii/S1746809425008389?dgcid=coauthor)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/IMIS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
