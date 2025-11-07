@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a Ph.D. student in the Department of System Engineering at <a href='https://www.stevens.edu/'>Stevens Institute of Technology</a>, under the supervision of Assistant Professor <a href='https://www.stevens.edu/profile/fliu22'>Feng Liu</a>. Prior to that, I received my master's degree from the School of Computer Science and Technology at <a href='https://english.ecnu.edu.cn/'>East China Normal University</a>, where I was supervised by Associate Professor <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>. I completed my undergraduate studies at the School of Software and the School of Economics and Management (minor) at <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. Additionally, I interned for one year with the <a href='https://github.com/uni-medical'>GMAI</a> team at  <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>. My leader is <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a>, and my mentor is <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>.
 
-<span class='anchor' id='-xl'></span>
+<span class='anchor' id='-educations'></span>
 
 # 🎓 Educations
 
@@ -27,7 +27,7 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 - *2022.09 - 2025.06*, East China Normal University, Shanghai, China.
 - *2018.09 - 2022.06*, Tianjin Polytechnic University, Tianjin, China.
  
-<span class='anchor' id='-lwzl'></span>
+<span class='anchor' id='-publications'></span>
 
 
 # 📝 Publications 
@@ -121,7 +121,7 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 
 
 
-<span class='anchor' id='-ryjx'></span>
+<span class='anchor' id='-honors-and-awards'></span>
 
 # 🏅 Honors and Awards
 - Chinese National scholarship
@@ -131,12 +131,12 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 - Blue Bridge Cup C/C++ Group National Competition third prize
 - Second prize of Asia-Pacific University Students Mathematical Contest in Modeling
 
-<span class='anchor' id='-xshy'></span>
+<span class='anchor' id='-invited-talks'></span>
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-<span class='anchor' id='-gzsx'></span>
+<span class='anchor' id='-internships'></span>
 
 # 💻 Internships
 
