@@ -78,7 +78,7 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2025</div><img src='images/ophora.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model.  Accepted by MICCAI2025.[[PDF]](https://arxiv.org/pdf/2505.07449)
+-	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model. Accepted by MICCAI2025.[[PDF]](https://arxiv.org/pdf/2505.07449)
 
 </div>
 
@@ -92,10 +92,10 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2025</div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI2026</div><img src='images/GMAI-VL.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset. Submitted to XXXX2025.[[PDF]](https://arxiv.org/pdf/2411.14522)
+-	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset.  Accepted by AAAI2026.[[PDF]](https://arxiv.org/pdf/2411.14522)
 
 </div>
 </div>
