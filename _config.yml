@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Guoan Wang"
-  avatar           : "images/selfie.jpeg"
+  avatar           : "images/avatar.jpeg"
   bio              : "Stevens Institute of Technology"
   location         : "New Jersey"
   employer         :
