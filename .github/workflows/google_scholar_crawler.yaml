@@ -1,18 +1,27 @@
 name: Get Citation Data
 
-on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+  page_build:
+  schedule:
+    - cron: '0 8 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
+    - uses: actions/checkout@v4
+    - name: Set Up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
     - name: Run
       run: |
         cd ./google_scholar_crawler
