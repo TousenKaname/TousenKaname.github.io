@@ -52,7 +52,7 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuronarrator' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning  Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473)
