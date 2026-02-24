@@ -47,7 +47,7 @@ I am currently a Ph.D. student in the Department of System Engineering at <a hre
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473)
+-	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
 
 </div>
 </div>
