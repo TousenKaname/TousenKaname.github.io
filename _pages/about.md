@@ -29,10 +29,20 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 <div class="edu-entry"><img src="images/tgu.jpg" alt="TGU" class="edu-logo"><div>*2018.09 - 2022.06*, Tianjin Polytechnic University, Tianjin, China.</div></div>
 
+<span class='anchor' id='-academic-services'></span>
+
+# 📖 Academic Services
+
+**Journal Reviewer**
+- Pattern Recognition
+
+**Conference Reviewer**
+- The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
+
 <span class='anchor' id='-publications'></span>
 
 
-# 📝 Publications 
+# 📝 Publications
 
 ---
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2024</div><img src='images/pub-sammed3d-moe.png' alt="sym" width="100%"></div></div>

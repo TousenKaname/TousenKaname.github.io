@@ -6,6 +6,9 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
+  - title: "Academic Services"
+    url: "/#-academic-services"
+
   - title: "Publications"
     url: "/#-publications"
 
