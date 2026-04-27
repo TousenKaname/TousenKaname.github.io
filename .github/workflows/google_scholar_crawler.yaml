@@ -1,12 +1,7 @@
 name: Get Citation Data
 
 on:
-  push:
-    branches:
-      - main
-      - master
   workflow_dispatch:
-  page_build:
   schedule:
     - cron: '0 8 * * *'
 
@@ -22,6 +17,8 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
+        cache: 'pip'
+        cache-dependency-path: google_scholar_crawler/requirements.txt
     - name: Run
       run: |
         cd ./google_scholar_crawler
@@ -34,5 +31,5 @@ jobs:
         git add *.json
         git commit -m "Updated Citation Data"
         git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
+      env:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
