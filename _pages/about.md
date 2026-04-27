@@ -39,6 +39,12 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 **Conference Reviewer**
 - The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
 
+<span class='anchor' id='-invited-talks'></span>
+
+# 💬 Invited Talks
+
+- *2026.03.27*, Rutgers University
+
 <span class='anchor' id='-publications'></span>
 
 
