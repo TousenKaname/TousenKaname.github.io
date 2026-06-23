@@ -23,27 +23,13 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 # 🎓 Educations
 
-<div class="edu-entry"><img src="images/sit.png" alt="SIT" class="edu-logo"><div>*2025.09 - Present*, Stevens Institute of Technology, New Jersey, USA.</div></div>
+<div class="edu-entry"><img src="images/rutgers.png" alt="Rutgers" class="edu-logo"><div><em>2026.09 - Present</em>, Rutgers University, New Brunswick, New Jersey, USA.</div></div>
 
-<div class="edu-entry"><img src="images/ecnu.svg" alt="ECNU" class="edu-logo"><div>*2022.09 - 2025.06*, East China Normal University, Shanghai, China.</div></div>
+<div class="edu-entry"><img src="images/sit.png" alt="SIT" class="edu-logo"><div><em>2025.09 - 2026.08</em>, Stevens Institute of Technology, New Jersey, USA.</div></div>
 
-<div class="edu-entry"><img src="images/tgu.jpg" alt="TGU" class="edu-logo"><div>*2018.09 - 2022.06*, Tianjin Polytechnic University, Tianjin, China.</div></div>
+<div class="edu-entry"><img src="images/ecnu.svg" alt="ECNU" class="edu-logo"><div><em>2022.09 - 2025.06</em>, East China Normal University, Shanghai, China.</div></div>
 
-<span class='anchor' id='-academic-services'></span>
-
-# 📖 Academic Services
-
-**Journal Reviewer**
-- Pattern Recognition
-
-**Conference Reviewer**
-- The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
-
-<span class='anchor' id='-invited-talks'></span>
-
-# 💬 Invited Talks
-
-- *2026.03.27*, Rutgers University
+<div class="edu-entry"><img src="images/tgu.jpg" alt="TGU" class="edu-logo"><div><em>2018.09 - 2022.06</em>, Tianjin Polytechnic University, Tianjin, China.</div></div>
 
 <span class='anchor' id='-publications'></span>
 
@@ -152,6 +138,23 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 </div>
 </div>
 
+<span class='anchor' id='-academic-services'></span>
+
+# 📖 Academic Services
+
+**Journal Reviewer**
+- Pattern Recognition
+- Frontiers in Radiology
+
+**Conference Reviewer**
+- The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
+
+<span class='anchor' id='-invited-talks'></span>
+
+# 💬 Invited Talks
+
+- *2026.03.27*, Rutgers University
+
 <span class='anchor' id='-honors-and-awards'></span>
 
 # 🏅 Honors and Awards
@@ -161,11 +164,6 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 - H Award in the American Collegiate Mathematical Contest in Modeling
 <!-- - Blue Bridge Cup C/C++ Group National Competition third prize -->
 - Second prize of Asia-Pacific University Students Mathematical Contest in Modeling
-
-<span class='anchor' id='-invited-talks'></span>
-
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 <span class='anchor' id='-internships'></span>
 

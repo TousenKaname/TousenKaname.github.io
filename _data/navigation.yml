@@ -6,14 +6,14 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
+  - title: "Publications"
+    url: "/#-publications"
+
   - title: "Academic Services"
     url: "/#-academic-services"
 
   - title: "Invited Talks"
     url: "/#-invited-talks"
-
-  - title: "Publications"
-    url: "/#-publications"
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
