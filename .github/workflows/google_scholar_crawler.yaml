@@ -27,7 +27,9 @@ jobs:
       run: |
         cd ./google_scholar_crawler
         pip3 install -r requirements.txt
-        python3 main.py
+        # hard wall-clock cap: a blocked Scholar session must fail the run
+        # (keeping the previous data) instead of hanging for hours
+        timeout --kill-after=30 900 python3 main.py
         cd ./results
         git init
         git config --local user.name "${GITHUB_ACTOR}"

@@ -25,6 +25,11 @@ from datetime import datetime
 
 from scholarly import scholarly
 
+# Make blocked requests fail fast instead of retrying forever inside
+# scholarly (its retry loop swallows exceptions raised by outer timers).
+scholarly.set_timeout(15)
+scholarly.set_retries(2)
+
 AUTHOR_FETCH_TIMEOUT = 300   # seconds for the profile + publication list
 PER_PUB_FILL_TIMEOUT = 45    # seconds for each publication detail page
 TOTAL_FILL_BUDGET = 600      # seconds spent on detail pages overall
