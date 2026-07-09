@@ -1,59 +1,66 @@
-"""Fetch Google Scholar stats for the homepage.
+"""Build the Google Scholar stats JSON for the homepage.
 
 Runs daily (and on pushes to main) via
 .github/workflows/google_scholar_crawler.yaml and force-pushes two JSON
 files to the `google-scholar-stats` branch:
 
-- gs_data.json           full author profile; `publications` is keyed by
+- gs_data.json           author profile; `publications` is keyed by
                          author_pub_id and consumed by the homepage JS
                          (per-paper citation counts + auto-generated
                          "Full Publication List" section)
 - gs_data_shieldsio.json shields.io endpoint payload for the total-citations
                          badge shown next to the intro paragraph
 
-Citation counts come from the Google Scholar profile page (the only
-Scholar request made). Author lists and venues come from Crossref/arXiv
-via enrich.py, because Scholar blocks per-publication requests from CI.
-The workflow wraps this script in `timeout`, so a blocked Scholar session
-fails the run (keeping the previously published data) instead of hanging.
+Citation counts come from the Google Scholar profile page, fetched in a
+subprocess (fetch_scholar.py) under a hard timeout because Scholar
+sometimes blocks CI runners and scholarly then hangs. When that happens,
+the previously published data is reused as the base — the `updated`
+timestamp is kept so the page shows the last successful Scholar sync —
+and only the Crossref/arXiv enrichment (authors, venues) is refreshed.
 """
 import json
 import os
-import signal
+import subprocess
+import sys
 import time
-from contextlib import contextmanager
 from datetime import datetime
 
-from scholarly import scholarly
+import requests
 
 from enrich import enrich_publication
 
-scholarly.set_timeout(15)
-scholarly.set_retries(2)
-
-AUTHOR_FETCH_TIMEOUT = 600  # seconds for the profile + publication list
+SCHOLAR_FETCH_TIMEOUT = 300  # seconds before the Scholar subprocess is killed
 
 
-@contextmanager
-def time_limit(seconds):
-    def _raise(signum, frame):
-        raise TimeoutError(f"timed out after {seconds}s")
+def fetch_from_scholar():
+    subprocess.run([sys.executable, '-u', 'fetch_scholar.py'],
+                   timeout=SCHOLAR_FETCH_TIMEOUT, check=True)
+    with open('results/scholar_raw.json') as infile:
+        author = json.load(infile)
+    os.remove('results/scholar_raw.json')
+    author['updated'] = str(datetime.now())
+    return author
 
-    previous = signal.signal(signal.SIGALRM, _raise)
-    signal.alarm(seconds)
-    try:
-        yield
-    finally:
-        signal.alarm(0)
-        signal.signal(signal.SIGALRM, previous)
+
+def fetch_previous_data():
+    repo = os.environ.get('GITHUB_REPOSITORY',
+                          'TousenKaname/TousenKaname.github.io')
+    url = f'https://raw.githubusercontent.com/{repo}/google-scholar-stats/gs_data.json'
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    author = resp.json()
+    # stored keyed by author_pub_id; the enrichment loop wants a list
+    author['publications'] = list(author['publications'].values())
+    return author
 
 
 print("Fetching Google Scholar profile...", flush=True)
-with time_limit(AUTHOR_FETCH_TIMEOUT):
-    author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-    scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-print(f"Profile fetched: {author.get('name')}, {author.get('citedby')} citations,"
-      f" {len(author['publications'])} publications", flush=True)
+try:
+    author = fetch_from_scholar()
+except Exception as exc:  # noqa: BLE001 - blocked Scholar must not kill the run
+    print(f"WARN: Scholar fetch failed ({exc}); "
+          f"re-enriching previously published data instead", flush=True)
+    author = fetch_previous_data()
 
 # Look up complete author lists and venues so the homepage can render the
 # full publication list. A miss keeps the basic entry (title/year/citations)
@@ -70,7 +77,6 @@ for pub in author['publications']:
         print(f"no match: {title[:60]}", flush=True)
     time.sleep(1)  # be polite to the open APIs
 
-author['updated'] = str(datetime.now())
 author['publications'] = {v['author_pub_id']: v for v in author['publications']}
 
 os.makedirs('results', exist_ok=True)
