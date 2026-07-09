@@ -34,13 +34,13 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <span class='anchor' id='-publications'></span>
 
 
-# 📝 Publications
+# 📝 Selected Publications
 
 ---
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2024</div><img src='images/pub-sammed3d-moe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Ye J\*, Cheng J, et al. SAM-Med3D-MoE: Towards a Non-Forgetting Segment Anything Model via Mixture of Experts for 3D Medical Image Segmentation[J]. arXiv preprint arXiv:2407.04938, 2024. Accepted by MICCAI2024.
+-	`Wang G*`, Ye J\*, Cheng J, Li T, Chen Z, Cai J, He J, Zhuang B. SAM-Med3D-MoE: Towards a Non-Forgetting Segment Anything Model via Mixture of Experts for 3D Medical Image Segmentation[J]. arXiv preprint arXiv:2407.04938, 2024. Accepted by MICCAI2024.
 [[PDF]](https://arxiv.org/pdf/2407.04938) <span class='show_paper_citations' data='avkysggAAAAJ:9yKSN-GCB0IC'></span>
 
 </div>
@@ -65,7 +65,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/pub-gmai-mmbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen P\*, Ye J\*, `Wang G*`, et al. GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI[J]. arXiv preprint arXiv:2408.03361, 2024. Accepted by NeurIPS2024.
+-	Chen P\*, Ye J\*, `Wang G*`, Li Y, Deng Z, Li W, Li T, Duan H, Huang Z, Su Y, Wang B, Zhang S, Fu B, Cai J, Zhuang B, Seibel EJ, He J, Qiao Y. GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI[J]. arXiv preprint arXiv:2408.03361, 2024. Accepted by NeurIPS2024.
 [[PDF]](https://arxiv.org/pdf/2408.03361) [[Homepage]](https://uni-medical.github.io/GMAI-MMBench.github.io/) <span class='show_paper_citations' data='avkysggAAAAJ:2osOgNQ5qMEC'></span>
 
 </div>
@@ -74,7 +74,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/pub-slidechat.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen Y\*, `Wang G*`, Ji Y\*, et al. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding[J]. arXiv preprint arXiv:2410.11761, 2024. Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2410.11761)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/) <span class='show_paper_citations' data='avkysggAAAAJ:UeHWp8X0CEIC'></span>
+-	Chen Y\*, `Wang G*`, Ji Y\*, Li Y, Ye J, Li T, Hu M, Yu R, Qiao Y, He J. SlideChat: A Large Vision-Language Assistant for Whole-Slide Pathology Image Understanding[J]. arXiv preprint arXiv:2410.11761, 2024. Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2410.11761)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/) <span class='show_paper_citations' data='avkysggAAAAJ:UeHWp8X0CEIC'></span>
 
 </div>
 </div>
@@ -82,58 +82,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Biomedical Signal Processing and Control</div><img src='images/pub-afd-polyp.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Zou S\*, `Wang G*`, Zhang Y\*, et al. Adaptive feature decoupled network for polyp segmentation. Accepted by Biomedical Signal Processing and Control.[[PDF]](https://www.sciencedirect.com/science/article/pii/S1746809425008389?dgcid=coauthor) <span class='show_paper_citations' data='avkysggAAAAJ:YsMSGLbcyi4C'></span>
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/pub-imis.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	Cheng, J., Fu, B., Ye, J., `Wang, G.`, Li, T., Wang, H., ... & He, J. (2024). Interactive Medical Image Segmentation: A Benchmark Dataset and Baseline. arXiv preprint arXiv:2411.12814.  Accepted by CVPR2025.[[PDF]](https://arxiv.org/pdf/2411.12814)[[Homepage]](https://uni-medical.github.io/IMIS-Benchmark/) <span class='show_paper_citations' data='avkysggAAAAJ:IjCSPb-OGe4C'></span>
-
-</div>
-
-</div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2025</div><img src='images/pub-ophora.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	Li, W., Hu, M., `Wang, G.`, Liu, L., Zhou, K., ... & He, J. (2024). Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model. Accepted by MICCAI2025.[[PDF]](https://arxiv.org/pdf/2505.07449) <span class='show_paper_citations' data='avkysggAAAAJ:Y0pCki6q_DkC'></span>
-
-</div>
-
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIA</div><img src='images/pub-f2tta.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	Wei Li, Jingyang Zhang, Lihao Liu, `Guoan Wang`, Junjun He, Yang Chen, Lixu Gu. F^2TTA: Free-Form Test-Time Adaptation on Cross-Domain Medical Image Classification via Image-Level Disentangled Prompt Tuning. Submitted to Medical Image Analysis.[[PDF]](https://arxiv.org/pdf/2507.02437) <span class='show_paper_citations' data='avkysggAAAAJ:W7OEmFMy1HYC'></span>
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI2026</div><img src='images/pub-gmai-vl.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	Tianbin Li, Yanzhou Su, Wei Li, Bin Fu, Zhe Chen, Ziyan Huang, `Guoan Wang`, et al. GMAI-VL & GMAI-VL-15M: Towards General Medical AI with a Large Vision-Language Model and a Comprehensive Multimodal Dataset.  Accepted by AAAI2026.[[PDF]](https://arxiv.org/pdf/2411.14522) <span class='show_paper_citations' data='avkysggAAAAJ:zYLM7Y9cAGgC'></span>
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV 2023</div><img src='images/pub-prfnet.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	Chen, J., Cheng, J., Jiang, L., Yin, P., `Wang, G.`, & Zhu, M. (2023, October). PRFNet: Progressive Region Focusing Network for Polyp Segmentation. In Chinese Conference on Pattern Recognition and Computer Vision (PRCV) (pp. 394-406). Singapore: Springer Nature Singapore. Accepted by PRCV2023.
-[[PDF]](https://link.springer.com/chapter/10.1007/978-981-99-8469-5_31)] <span class='show_paper_citations' data='avkysggAAAAJ:d1gkVwhDpl0C'></span>
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2023</div><img src='images/pub-sqt.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-- Huai, T., Yang, S., Zhang, J., `Wang, G.`, Yu, X., Ma, T., & He, L. (2023, July). SQT: Debiased Visual Question Answering via Shuffling Question Types. In 2023 IEEE International Conference on Multimedia and Expo (ICME) (pp. 600-605). IEEE. Accepted by ICME2023.
-[[PDF]](https://ieeexplore.ieee.org/abstract/document/10219581)] <span class='show_paper_citations' data='avkysggAAAAJ:u-x6o8ySG0sC'></span>
+-	Zou S\*, `Wang G*`, Zhang Y\*, Shen Y, Yuan M, Su Y. Adaptive feature decoupled network for polyp segmentation. Accepted by Biomedical Signal Processing and Control.[[PDF]](https://www.sciencedirect.com/science/article/pii/S1746809425008389?dgcid=coauthor) <span class='show_paper_citations' data='avkysggAAAAJ:YsMSGLbcyi4C'></span>
 
 </div>
 </div>
