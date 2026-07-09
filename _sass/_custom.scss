@@ -70,7 +70,7 @@ body {
 /* The theme intends the sidebar profile to stack vertically on wide
    screens, but its media rule is emitted before the base `display: flex`
    and never wins the cascade. Re-assert it here (this file is imported
-   last), and crop the portrait photo into a neat circle. */
+   last). The portrait photo keeps its natural elongated oval shape. */
 @include breakpoint($large) {
     .profile_box {
         display: block;
@@ -78,17 +78,7 @@ body {
 
     .author__avatar img {
         width: 140px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
     }
-}
-
-/* Chinese name shown as a quiet secondary line under the author name */
-.author__secondary-name {
-    margin: 0 0 .4em;
-    font-size: .9em;
-    color: #9a9a9a;
-    letter-spacing: .12em;
 }
 
 /* Selected Publications: image + text card */
