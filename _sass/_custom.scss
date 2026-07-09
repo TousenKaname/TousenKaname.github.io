@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Site-specific styles (everything that is not part of the vendored
+   Minimal Mistakes theme lives here)
+   ========================================================================== */
+
+$site-accent-color: #00369f; // matches the paper venue badges
+
+/* Selected Publications: image + text card */
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px #888;
+            object-fit: cover;
+        }
+    }
+
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+    }
+
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
+/* Educations: logo + text rows */
+.edu-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+
+.edu-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+/* Offset in-page anchors so headings are not hidden behind the masthead */
+$scroll_offset : 2em;
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
+    margin-top: -$scroll_offset;
+}
+
+/* Venue badge on Selected Publications images */
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: white;
+    background-color: $site-accent-color;
+    font-size: .8em;
+}
+
+/* Full Publication List (auto-synced from Google Scholar,
+   rendered by assets/js/scholar-stats.js) */
+.gs-pub-note {
+    font-size: .85em;
+    color: #8a8a8a;
+}
+
+.gs-pub-year {
+    color: $site-accent-color;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: .2em;
+}
+
+.gs-pub-item {
+    padding: .55em 0;
+    border-bottom: 1px dashed #f0f0f0;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .gs-pub-title {
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .gs-pub-authors {
+        font-size: .9em;
+        color: #555;
+        margin-top: .15em;
+    }
+
+    .gs-pub-venue {
+        font-size: .9em;
+        font-style: italic;
+        color: #888;
+        margin-top: .1em;
+    }
+}
+
+.gs-pub-cite {
+    display: inline-block;
+    padding: 0 .7em;
+    margin-left: .4em;
+    color: white;
+    background-color: $site-accent-color;
+    font-size: .7em;
+    font-weight: 600;
+    border-radius: 1em;
+    vertical-align: .15em;
+    white-space: nowrap;
+}

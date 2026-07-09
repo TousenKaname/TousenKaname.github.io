@@ -49,7 +49,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
+-	`Wang G*`, Yang S\*, Ding J-E, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
 
 </div>
 </div>
@@ -86,6 +86,14 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 </div>
 </div>
+
+<span class='anchor' id='-full-publications'></span>
+
+# 📚 Full Publication List
+
+<p class="gs-pub-note">This list is automatically synced from my <a href="https://scholar.google.com/citations?user=avkysggAAAAJ" target="_blank" rel="noopener">Google Scholar</a> profile<span id="gs-pub-updated"></span>.</p>
+
+<div id="gs-pub-list"><p class="gs-pub-note">Loading publication list from Google Scholar…</p></div>
 
 <span class='anchor' id='-academic-services'></span>
 

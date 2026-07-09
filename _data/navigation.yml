@@ -9,6 +9,9 @@ main:
   - title: "Selected Publications"
     url: "/#-publications"
 
+  - title: "Full Publications"
+    url: "/#-full-publications"
+
   - title: "Academic Services"
     url: "/#-academic-services"
 
