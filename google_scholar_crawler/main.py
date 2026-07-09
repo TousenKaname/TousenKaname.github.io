@@ -1,7 +1,8 @@
 """Fetch Google Scholar stats for the homepage.
 
-Runs daily via .github/workflows/google_scholar_crawler.yaml and force-pushes
-two JSON files to the `google-scholar-stats` branch:
+Runs daily (and on pushes to main) via
+.github/workflows/google_scholar_crawler.yaml and force-pushes two JSON
+files to the `google-scholar-stats` branch:
 
 - gs_data.json           full author profile; `publications` is keyed by
                          author_pub_id and consumed by the homepage JS
@@ -9,24 +10,56 @@ two JSON files to the `google-scholar-stats` branch:
                          "Full Publication List" section)
 - gs_data_shieldsio.json shields.io endpoint payload for the total-citations
                          badge shown next to the intro paragraph
+
+Google Scholar aggressively rate-limits GitHub Actions IPs and scholarly can
+hang on blocked requests, so every network step runs under a hard timeout:
+the run either finishes quickly or fails fast — it never hangs for hours.
 """
 import json
 import os
 import random
+import signal
 import time
+from contextlib import contextmanager
 from datetime import datetime
 
 from scholarly import scholarly
 
-author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+AUTHOR_FETCH_TIMEOUT = 300   # seconds for the profile + publication list
+PER_PUB_FILL_TIMEOUT = 45    # seconds for each publication detail page
+TOTAL_FILL_BUDGET = 600      # seconds spent on detail pages overall
+
+
+@contextmanager
+def time_limit(seconds):
+    def _raise(signum, frame):
+        raise TimeoutError(f"timed out after {seconds}s")
+
+    previous = signal.signal(signal.SIGALRM, _raise)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, previous)
+
+
+with time_limit(AUTHOR_FETCH_TIMEOUT):
+    author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+    scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
 
 # Fill each publication with its detail page so the homepage can show the
-# complete author list and venue. A failed fill keeps the basic entry
-# (title/year/citations) so the site degrades gracefully.
+# complete author list and venue. A failed or skipped fill keeps the basic
+# entry (title/year/citations) so the site degrades gracefully.
+fill_deadline = time.monotonic() + TOTAL_FILL_BUDGET
 for pub in author['publications']:
+    if time.monotonic() > fill_deadline:
+        print(f"WARN: fill budget exhausted, skipping remaining fills "
+              f"from {pub.get('author_pub_id')}")
+        break
     try:
-        scholarly.fill(pub)
+        with time_limit(PER_PUB_FILL_TIMEOUT):
+            scholarly.fill(pub)
         bib = pub['bib']
         bib.pop('abstract', None)  # keep gs_data.json small
         pub['venue'] = (bib.get('journal') or bib.get('conference')
