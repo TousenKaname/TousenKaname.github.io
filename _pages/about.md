@@ -57,7 +57,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning  Submitted to XXXX2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:ufrVoPGSRksC'></span>
+-	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning  Submitted to XXXX2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:0EnyYjriUFMC'></span>
 
 </div>
 </div>
@@ -144,6 +144,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 **Journal Reviewer**
 - Pattern Recognition
+- Brain Informatics
 - Frontiers in Radiology
 
 **Conference Reviewer**
@@ -158,6 +159,7 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 <span class='anchor' id='-honors-and-awards'></span>
 
 # 🏅 Honors and Awards
+- Provost Doctoral Fellowship, Stevens Institute of Technology
 - Chinese National scholarship
 - Tianjin Municipal People's Government Scholarship
 - President's first scholarship
