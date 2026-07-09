@@ -2,6 +2,9 @@ name: Get Citation Data
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 8 * * *'
 
