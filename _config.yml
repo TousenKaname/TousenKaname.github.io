@@ -37,6 +37,7 @@ include:
   - files
 exclude:
   - google_scholar_crawler
+  - run_server.sh
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

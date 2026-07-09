@@ -36,7 +36,6 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 # 📝 Selected Publications
 
----
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2024</div><img src='images/pub-sammed3d-moe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

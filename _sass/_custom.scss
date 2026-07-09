@@ -5,6 +5,92 @@
 
 $site-accent-color: #00369f; // matches the paper venue badges
 
+/* --- Elegance pass ------------------------------------------------------ */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: rgba($site-accent-color, .12);
+}
+
+/* Section headings: hairline rule with a short accent bar */
+.page__content h1 {
+    position: relative;
+    padding-bottom: .35em;
+    border-bottom: 1px solid #ececec;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 2.4em;
+        height: 2px;
+        background: $site-accent-color;
+    }
+}
+
+/* Masthead links: accent underline slides in on hover */
+.greedy-nav .visible-links a {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: .4em;
+        margin: 0 auto;
+        width: 0;
+        height: 2px;
+        background: $site-accent-color;
+        transition: width .25s ease;
+    }
+
+    &:hover:after {
+        width: 60%;
+    }
+}
+
+/* Author sidebar avatar: soft ring */
+.author__avatar img {
+    border: 3px solid #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .15);
+}
+
+/* Keep long link labels inside the sidebar instead of letting them
+   overflow into the page content */
+.author__urls li {
+    white-space: normal;
+}
+
+/* The theme intends the sidebar profile to stack vertically on wide
+   screens, but its media rule is emitted before the base `display: flex`
+   and never wins the cascade. Re-assert it here (this file is imported
+   last), and crop the portrait photo into a neat circle. */
+@include breakpoint($large) {
+    .profile_box {
+        display: block;
+    }
+
+    .author__avatar img {
+        width: 140px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+/* Chinese name shown as a quiet secondary line under the author name */
+.author__secondary-name {
+    margin: 0 0 .4em;
+    font-size: .9em;
+    color: #9a9a9a;
+    letter-spacing: .12em;
+}
+
 /* Selected Publications: image + text card */
 .paper-box {
     display: flex;
@@ -23,8 +109,15 @@ $site-accent-color: #00369f; // matches the paper venue badges
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
             object-fit: cover;
+            transition: transform .25s ease, box-shadow .25s ease;
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 10px 24px rgba(0, 0, 0, .16);
+            }
         }
     }
 
@@ -89,6 +182,11 @@ h1:before, .anchor:before {
     color: white;
     background-color: $site-accent-color;
     font-size: .8em;
+    font-weight: 600;
+    letter-spacing: .03em;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 54, 159, .3);
+    z-index: 1;
 }
 
 /* Full Publication List (auto-synced from Google Scholar,
@@ -105,8 +203,14 @@ h1:before, .anchor:before {
 }
 
 .gs-pub-item {
-    padding: .55em 0;
+    padding: .55em .5em;
     border-bottom: 1px dashed #f0f0f0;
+    border-radius: 6px;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: #f7f9fd;
+    }
 
     &:last-child {
         border-bottom: none;

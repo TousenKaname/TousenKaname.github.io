@@ -18,6 +18,11 @@ function gsEscapeHtml(value) {
         .replace(/"/g, '&quot;')
 }
 
+/* Cosmetic cleanup of Scholar titles, e.g. "F^ 2TTA" -> "F²TTA". */
+function gsPrettifyTitle(escapedTitle) {
+    return escapedTitle.replace(/\^\s?2/g, '²').replace(/\^\s?3/g, '³')
+}
+
 /* "A and B and C" -> "A, B, C", with the site owner's name emphasized. */
 function gsFormatAuthors(authorString) {
     var authors = gsEscapeHtml(String(authorString).split(' and ').join(', '))
@@ -68,7 +73,7 @@ function gsBuildPubList(data) {
 
         html += "<div class='gs-pub-item'>"
         html += "<div class='gs-pub-title'><a href='" + gsEscapeHtml(gsPublicationLink(pub))
-            + "' target='_blank' rel='noopener'>" + gsEscapeHtml(bib['title'] || 'Untitled') + '</a>'
+            + "' target='_blank' rel='noopener'>" + gsPrettifyTitle(gsEscapeHtml(bib['title'] || 'Untitled')) + '</a>'
         if (pub['num_citations'] > 0) {
             html += " <span class='gs-pub-cite'>" + pub['num_citations']
                 + ' citation' + (pub['num_citations'] > 1 ? 's' : '') + '</span>'
