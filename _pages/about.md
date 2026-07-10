@@ -29,7 +29,7 @@ Guoan Wang is a Ph.D. candidate in the Department of Systems Engineering at <a h
 
 <div class="edu-entry"><img src="images/logo-ecnu.svg" alt="ECNU" class="edu-logo"><div><em>2022.09 - 2025.06</em>, M.Eng. in Computer Technology, East China Normal University, Shanghai, China.</div></div>
 
-<div class="edu-entry"><img src="images/logo-tgu.jpg" alt="TGU" class="edu-logo"><div><em>2018.09 - 2022.06</em>, B.Eng. in Network Engineering (minor in Public Utilities Management), Tianjin Polytechnic University, Tianjin, China.</div></div>
+<div class="edu-entry"><img src="images/logo-tgu.png" alt="TGU" class="edu-logo"><div><em>2018.09 - 2022.06</em>, B.Eng. in Network Engineering (minor in Public Utilities Management), Tianjin Polytechnic University, Tianjin, China.</div></div>
 
 <span class='anchor' id='-publications'></span>
 
