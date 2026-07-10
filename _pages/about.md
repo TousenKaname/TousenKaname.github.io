@@ -23,13 +23,13 @@ I am currently a Ph.D. candidate in the Department of Systems Engineering at <a 
 
 # 🎓 Educations
 
-<div class="edu-entry"><img src="images/logo-rutgers.png" alt="Rutgers" class="edu-logo"><div><em>2026.09 - Present</em>, Rutgers University, New Brunswick, New Jersey, USA.</div></div>
+<div class="edu-entry"><img src="images/logo-rutgers.png" alt="Rutgers" class="edu-logo"><div><em>2026.09 - Present</em>, Ph.D. in Industrial and Systems Engineering, Rutgers University, New Brunswick, New Jersey, USA.</div></div>
 
-<div class="edu-entry"><img src="images/logo-sit.png" alt="SIT" class="edu-logo"><div><em>2025.09 - 2026.08</em>, Stevens Institute of Technology, New Jersey, USA.</div></div>
+<div class="edu-entry"><img src="images/logo-sit.png" alt="SIT" class="edu-logo"><div><em>2025.09 - 2026.08</em>, Ph.D. student in Systems Engineering, Stevens Institute of Technology, New Jersey, USA.</div></div>
 
-<div class="edu-entry"><img src="images/logo-ecnu.svg" alt="ECNU" class="edu-logo"><div><em>2022.09 - 2025.06</em>, East China Normal University, Shanghai, China.</div></div>
+<div class="edu-entry"><img src="images/logo-ecnu.svg" alt="ECNU" class="edu-logo"><div><em>2022.09 - 2025.06</em>, M.Eng. in Computer Technology, East China Normal University, Shanghai, China.</div></div>
 
-<div class="edu-entry"><img src="images/logo-tgu.jpg" alt="TGU" class="edu-logo"><div><em>2018.09 - 2022.06</em>, Tianjin Polytechnic University, Tianjin, China.</div></div>
+<div class="edu-entry"><img src="images/logo-tgu.jpg" alt="TGU" class="edu-logo"><div><em>2018.09 - 2022.06</em>, B.Eng. in Network Engineering (minor in Public Utilities Management), Tianjin Polytechnic University, Tianjin, China.</div></div>
 
 <span class='anchor' id='-publications'></span>
 
