@@ -240,3 +240,10 @@ h1:before, .anchor:before {
     vertical-align: .15em;
     white-space: nowrap;
 }
+
+/* Fixed-width date column in dated lists (e.g. Internships) so the
+   text after each date starts at the same position */
+.entry-date {
+    display: inline-block;
+    min-width: 9.5em;
+}

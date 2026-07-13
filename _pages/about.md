@@ -127,9 +127,9 @@ Guoan Wang is a Ph.D. candidate in the Department of Systems Engineering at <a h
 
 # 💻 Internships
 
-- *2025.02 - 2025.06*, INTSIG	Information	Co.	Ltd.
-- *2024.09 - 2024.11*, Shanghai Artificial Intelligence Laboratory.
-- *2024.07 - 2024.08*, Nomura Information Technology Shanghai Co., Ltd (NTSH)
-- *2023.12 - 2024.06*, Shanghai Artificial Intelligence Laboratory.
-- *2023.09 - 2023.11*, Ubiquant Investment (Beijing) Corp.
-- *2023.02 - 2023.06*, <a href="https://www.ilambda.com/About-us">iLambda</a> Corp.
+- <span class="entry-date">*2025.02 - 2025.06*</span> INTSIG Information Co., Ltd.
+- <span class="entry-date">*2024.09 - 2024.11*</span> Shanghai Artificial Intelligence Laboratory
+- <span class="entry-date">*2024.07 - 2024.08*</span> Nomura Information Technology Shanghai Co., Ltd (NTSH)
+- <span class="entry-date">*2023.12 - 2024.06*</span> Shanghai Artificial Intelligence Laboratory
+- <span class="entry-date">*2023.09 - 2023.11*</span> Ubiquant Investment (Beijing) Corp.
+- <span class="entry-date">*2023.02 - 2023.06*</span> <a href="https://www.ilambda.com/About-us">iLambda</a> Corp.
