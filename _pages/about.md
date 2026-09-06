@@ -61,7 +61,7 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature Cancer 2026</div><img src='images/pub-slidechat-nc.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature Cancer 2026</div><img src='images/pub-slidechat-nc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	Chen Y, Ma C, Li Q, Yan F, Chen Y, Li T, Ye J, Hu M, Lin Y, Li Y, `Wang G`, Xu H, Dong H, Wang X, Xu X, Zhou Y, Zhu X, Yang S, Wang X, Zhang L, Qiao Y, Yu R, He J, Ji Y. SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types. Nature Cancer, 2026.[[Paper]](https://www.nature.com/articles/s43018-026-01220-4)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/)
