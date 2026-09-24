@@ -19,6 +19,8 @@ redirect_from:
 
 Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engineering at <a href='https://newbrunswick.rutgers.edu/'>Rutgers University&ndash;New Brunswick</a>, advised by Dr. <a href='https://rutgers-ninc-lab.github.io/FengLiu/'>Feng Liu</a> and co-advised by Dr. <a href='https://sites.rutgers.edu/neurological-surgery/people/hai-sun-md-phd/'>Hai Sun</a>. Before transferring to Rutgers, he began his doctoral studies in the Department of Systems Engineering at <a href='https://www.stevens.edu/'>Stevens Institute of Technology</a>. He received his M.Eng. in Computer Technology from <a href='https://english.ecnu.edu.cn/'>East China Normal University</a>, supervised by Dr. <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>, and his B.Eng. in Network Engineering, with a minor in Public Utilities Management, from <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. Prior to his doctoral studies, he spent a year as a research intern with the <a href='https://github.com/uni-medical'>GMAI</a> team at <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>, working with Dr. <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a> and Dr. <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>. <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations&cacheSeconds=300">
 
+<p class="collab-note">🤝 I am looking for research collaborators and friends. If you are interested, feel free to <a href="mailto:{{ site.author.email }}">contact me</a> or schedule a coffee chat ☕</p>
+
 <span class='anchor' id='-educations'></span>
 
 # 🎓 Educations
@@ -64,7 +66,7 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Nature Cancer 2026</div><img src='images/pub-slidechat-nc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Chen Y, Ma C, Li Q, Yan F, Chen Y, Li T, Ye J, Hu M, Lin Y, Li Y, `Wang G`, Xu H, Dong H, Wang X, Xu X, Zhou Y, Zhu X, Yang S, Wang X, Zhang L, Qiao Y, Yu R, He J, Ji Y. SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types. Nature Cancer, 2026.[[Paper]](https://www.nature.com/articles/s43018-026-01220-4)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/)
+-	Chen Y, Ma C, Li Q, Yan F, Chen Y, Li T, Ye J, Hu M, Lin Y, Li Y, `Wang G`, Xu H, Dong H, Wang X, Xu X, Zhou Y, Zhu X, Yang S, Wang X, Zhang L, Qiao Y, Yu R, He J, Ji Y. SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types. Nature Cancer, 2026.[[Paper]](https://www.nature.com/articles/s43018-026-01220-4)[[Homepage]](https://uni-medical.github.io/SlideChat.github.io/) <span class='show_paper_citations' data='avkysggAAAAJ:3fE2CSJIrl8C'></span>
 
 </div>
 </div>
