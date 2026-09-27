@@ -13,7 +13,14 @@ Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages, based on the
   Google Scholar profile, and pushes the results to the `google-scholar-stats`
   branch. The homepage reads that JSON at load time to show the total citation
   badge, per-paper citation counts, and the auto-generated
-  "Full Publication List" section.
+  "Full Publication List" section. If Scholar can't be reached, the last
+  published data is kept and the run is flagged; after 3 days without a
+  successful sync the workflow fails so it gets noticed.
+- **Visitor globe** — the footer shows a slowly turning globe of where
+  visitors come from, with the top countries/regions beside it. A second
+  GitHub Action (`.github/workflows/visitor_stats.yaml`) reads the site's
+  Flag Counter stats every 6 hours and pushes `visitors.json` to the
+  `visitor-stats` branch.
 - **Single-page layout** — all content lives in `_pages/about.md`.
 - **Responsive design** — adapts to desktop and mobile viewports.
 
@@ -30,6 +37,8 @@ Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages, based on the
 | `assets/`, `_sass/` (rest) | Theme CSS/JS/fonts (vendored Minimal Mistakes) |
 | `images/` | Avatar, favicons, school logos (`logo-*`), publication figures (`pub-*`) |
 | `google_scholar_crawler/` | The crawler run by the GitHub Action (uses the `GOOGLE_SCHOLAR_ID` repo secret) |
+| `_includes/visitor-globe.html`, `assets/js/visitor-globe.js` | The visitor globe footer and its renderer |
+| `visitor_crawler/` | Builds `visitors.json` from the Flag Counter stats page; `countries.csv` maps country codes to map ids and centroids |
 
 ## Local development
 

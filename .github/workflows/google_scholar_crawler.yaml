@@ -24,6 +24,7 @@ jobs:
         cache: 'pip'
         cache-dependency-path: google_scholar_crawler/requirements.txt
     - name: Run
+      id: crawl
       run: |
         cd ./google_scholar_crawler
         pip3 install -r requirements.txt
@@ -39,3 +40,10 @@ jobs:
         git push "${remote_repo}" HEAD:google-scholar-stats --force
       env:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+    # main.py falls back to the last published data when Scholar can't be
+    # fetched; fail loudly once that has lasted a few days
+    - name: Check Scholar sync
+      if: steps.crawl.outputs.scholar_stale_since
+      run: |
+        echo "::error::Google Scholar data has not refreshed since ${{ steps.crawl.outputs.scholar_stale_since }}. See the Scholar fetch error in the 'Run' step log."
+        exit 1

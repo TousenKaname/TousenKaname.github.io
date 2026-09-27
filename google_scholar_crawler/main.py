@@ -17,6 +17,9 @@ sometimes blocks CI runners and scholarly then hangs. When that happens,
 the previously published data is reused as the base — the `updated`
 timestamp is kept so the page shows the last successful Scholar sync —
 and only the Crossref/arXiv enrichment (authors, venues) is refreshed.
+Each such fallback is flagged with a warning in the Actions UI, and once
+the data is STALE_AFTER_DAYS old the workflow fails so the breakage is
+noticed instead of the page silently going stale.
 """
 import json
 import os
@@ -30,6 +33,7 @@ import requests
 from enrich import enrich_publication
 
 SCHOLAR_FETCH_TIMEOUT = 300  # seconds before the Scholar subprocess is killed
+STALE_AFTER_DAYS = 3  # failed syncs tolerated before the workflow goes red
 
 
 def fetch_from_scholar():
@@ -54,13 +58,24 @@ def fetch_previous_data():
     return author
 
 
+def report_scholar_fallback(exc, updated):
+    print(f"::warning::Google Scholar fetch failed ({exc}); "
+          f"re-publishing data from the last successful sync ({updated})",
+          flush=True)
+    age = datetime.now() - datetime.fromisoformat(updated)
+    github_output = os.environ.get('GITHUB_OUTPUT')
+    if age.days >= STALE_AFTER_DAYS and github_output:
+        # read by the "Check Scholar sync" step of the workflow
+        with open(github_output, 'a') as outfile:
+            outfile.write(f"scholar_stale_since={updated.split(' ')[0]}\n")
+
+
 print("Fetching Google Scholar profile...", flush=True)
 try:
     author = fetch_from_scholar()
 except Exception as exc:  # noqa: BLE001 - blocked Scholar must not kill the run
-    print(f"WARN: Scholar fetch failed ({exc}); "
-          f"re-enriching previously published data instead", flush=True)
     author = fetch_previous_data()
+    report_scholar_fallback(exc, author['updated'])
 
 # Look up complete author lists and venues so the homepage can render the
 # full publication list. A miss keeps the basic entry (title/year/citations)

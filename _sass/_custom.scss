@@ -257,3 +257,164 @@ h1:before, .anchor:before {
     border-left: 3px solid $site-accent-color;
     border-radius: 4px;
 }
+
+/* Visitor globe footer (_includes/visitor-globe.html,
+   drawn by assets/js/visitor-globe.js) */
+.visitor-globe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+    margin-top: 3em;
+    padding-top: 1.75em;
+    border-top: 1px solid #ececec;
+
+    @include breakpoint($medium) {
+        flex-direction: row;
+        gap: 2.25em;
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+}
+
+.visitor-globe__stage {
+    position: relative;
+    flex: 0 0 auto;
+    width: 220px;
+    max-width: 100%;
+    aspect-ratio: 1;
+
+    @include breakpoint($medium) {
+        width: 240px;
+    }
+}
+
+.visitor-globe__canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    touch-action: pan-y; // vertical swipes still scroll the page
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.visitor-globe--no-map .visitor-globe__stage {
+    display: none;
+}
+
+.visitor-globe__tip {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    padding: .25em .6em;
+    font-size: .72em;
+    line-height: 1.4;
+    white-space: nowrap;
+    color: #fff;
+    background: rgba(22, 30, 46, .88);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+    pointer-events: none;
+
+    strong {
+        font-weight: 600;
+        margin-right: .2em;
+    }
+}
+
+.visitor-globe__info {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 22em;
+    font-size: .9em;
+}
+
+.page__content .visitor-globe__eyebrow {
+    margin: 0 0 .35em;
+    font-size: .72em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+
+.page__content .visitor-globe__totals {
+    margin: 0 0 .9em;
+    color: #555;
+
+    strong {
+        font-size: 1.35em;
+        font-weight: 700;
+        color: $site-accent-color;
+    }
+}
+
+.page__content .visitor-globe__top {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: grid;
+        grid-template-columns: 9.5em 1fr 3em;
+        align-items: center;
+        gap: .75em;
+        margin: 0;
+        padding: .2em .35em;
+        font-size: .88em;
+        border-radius: 4px;
+        cursor: default;
+        transition: background-color .2s ease;
+
+        &:hover {
+            background-color: #f3f6fc;
+        }
+    }
+}
+
+.visitor-globe__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+}
+
+.visitor-globe__bar {
+    height: 6px;
+    background: #eef1f7;
+    border-radius: 3px;
+    overflow: hidden;
+
+    span {
+        display: block;
+        height: 100%;
+        background: linear-gradient(90deg, rgba($site-accent-color, .55), $site-accent-color);
+        border-radius: 3px;
+    }
+}
+
+.visitor-globe__count {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: #666;
+}
+
+.page__content .visitor-globe__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin: 0;
+    font-size: .75em;
+    color: #9a9a9a;
+
+    img {
+        display: block;
+        opacity: .8;
+    }
+}

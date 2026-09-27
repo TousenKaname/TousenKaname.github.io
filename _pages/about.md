@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engineering at <a href='https://newbrunswick.rutgers.edu/'>Rutgers University&ndash;New Brunswick</a>, advised by Dr. <a href='https://rutgers-ninc-lab.github.io/FengLiu/'>Feng Liu</a> and co-advised by Dr. <a href='https://sites.rutgers.edu/neurological-surgery/people/hai-sun-md-phd/'>Hai Sun</a>. Before transferring to Rutgers, he began his doctoral studies in the Department of Systems Engineering at <a href='https://www.stevens.edu/'>Stevens Institute of Technology</a>. He received his M.Eng. in Computer Technology from <a href='https://english.ecnu.edu.cn/'>East China Normal University</a>, supervised by Dr. <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>, and his B.Eng. in Network Engineering, with a minor in Public Utilities Management, from <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. Prior to his doctoral studies, he spent a year as a research intern with the <a href='https://github.com/uni-medical'>GMAI</a> team at <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>, working with Dr. <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a> and Dr. <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>. <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations&cacheSeconds=300">
+Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engineering at <a href='https://newbrunswick.rutgers.edu/'>Rutgers University&ndash;New Brunswick</a>, where he is advised by Dr. <a href='https://rutgers-ninc-lab.github.io/FengLiu/'>Feng Liu</a> and co-advised by Dr. <a href='https://sites.rutgers.edu/neurological-surgery/people/hai-sun-md-phd/'>Hai Sun</a>. He began his doctoral studies in the Department of Systems Engineering at <a href='https://www.stevens.edu/'>Stevens Institute of Technology</a> before transferring to Rutgers. He earned his M.Eng. in Computer Technology from <a href='https://english.ecnu.edu.cn/'>East China Normal University</a> under the guidance of Dr. <a href='https://faculty.ecnu.edu.cn/_s16/cl2_6128/main.psp'>Lei Chen</a>, and his B.Eng. in Network Engineering (with a minor in Public Utilities Management) from <a href='https://www.tiangong.edu.cn/main.htm'>Tianjin Polytechnic University</a>. During his master's studies, he spent a year as a research intern with the <a href='https://github.com/uni-medical'>GMAI</a> team at <a href='https://www.shlab.org.cn'>Shanghai Artificial Intelligence Laboratory</a>, working closely with Dr. <a href='https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl'>Junjun He</a> and Dr. <a href='https://scholar.google.com/citations?hl=zh-CN&user=UFBrJOAAAAAJ&view_op=list_works'>Jin Ye</a>. <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations&cacheSeconds=300">
 
-<p class="collab-note">🤝 I am looking for research collaborators and friends. If you are interested, feel free to <a href="mailto:{{ site.author.email }}">contact me</a> or schedule a coffee chat ☕</p>
+<p class="collab-note">🤝 I'm always happy to connect with fellow researchers and new friends. If you'd like to collaborate or just chat, feel free to <a href="mailto:{{ site.author.email }}">drop me an email</a> or set up a coffee chat ☕</p>
 
 <span class='anchor' id='-educations'></span>
 
@@ -47,18 +47,18 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G`, Yang S, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
+-	`Wang G`, Yang S, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines[J]. arXiv preprint arXiv:2602.13473, 2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning  Submitted to XXXX2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:0EnyYjriUFMC'></span>
+-	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning[J]. arXiv preprint arXiv:2603.16880, 2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:0EnyYjriUFMC'></span>
 
 </div>
 </div>

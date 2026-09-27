@@ -1,0 +1,34 @@
+name: Get Visitor Data
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - visitor_crawler/**
+      - .github/workflows/visitor_stats.yaml
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run
+      run: |
+        cd ./visitor_crawler
+        python3 -u main.py
+        cd ./results
+        git init
+        git config --local user.name "${GITHUB_ACTOR}"
+        git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+        git add visitors.json
+        git commit -m "Updated Visitor Data"
+        git push "${remote_repo}" HEAD:visitor-stats --force
