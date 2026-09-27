@@ -47,18 +47,18 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/pub-neuroweaver.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G`, Yang S, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines. Submitted to XXXX2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
+-	`Wang G`, Yang S, Liu F. NeuroWeaver: An Autonomous Evolutionary Agent for Exploring the Programmatic Space of EEG Analysis Pipelines[J]. arXiv preprint arXiv:2602.13473, 2026. [[PDF]](https://www.arxiv.org/pdf/2602.13473) <span class='show_paper_citations' data='avkysggAAAAJ:WF5omc3nYNoC'></span>
 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">XXXX 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/pub-neuronarrator.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning  Submitted to XXXX2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:0EnyYjriUFMC'></span>
+-	`Wang G*`, Yang S\*, Ding J-E, Zhu H, Liu F. NeuroNarrator: A Generalist EEG-to-Text Foundation Model for Clinical Interpretation via Spectro-Spatial Grounding and Temporal State-Space Reasoning[J]. arXiv preprint arXiv:2603.16880, 2026. [[PDF]](https://arxiv.org/pdf/2603.16880) <span class='show_paper_citations' data='avkysggAAAAJ:0EnyYjriUFMC'></span>
 
 </div>
 </div>
