@@ -1,0 +1,245 @@
+code,iso_n3,lat,lon,name
+AD,020,42.546,1.602,Andorra
+AE,784,23.424,53.848,United Arab Emirates
+AF,004,33.939,67.71,Afghanistan
+AG,028,17.061,-61.796,Antigua and Barbuda
+AI,660,18.221,-63.069,Anguilla
+AL,008,41.153,20.168,Albania
+AM,051,40.069,45.038,Armenia
+AN,,12.226,-69.06,Netherlands Antilles
+AO,024,-11.203,17.874,Angola
+AQ,010,-75.251,-0.071,Antarctica
+AR,032,-38.416,-63.617,Argentina
+AS,016,-14.271,-170.132,American Samoa
+AT,040,47.516,14.55,Austria
+AU,036,-25.274,133.775,Australia
+AW,533,12.521,-69.968,Aruba
+AZ,031,40.143,47.577,Azerbaijan
+BA,070,43.916,17.679,Bosnia and Herzegovina
+BB,052,13.194,-59.543,Barbados
+BD,050,23.685,90.356,Bangladesh
+BE,056,50.504,4.47,Belgium
+BF,854,12.238,-1.562,Burkina Faso
+BG,100,42.734,25.486,Bulgaria
+BH,048,25.93,50.638,Bahrain
+BI,108,-3.373,29.919,Burundi
+BJ,204,9.308,2.316,Benin
+BM,060,32.321,-64.757,Bermuda
+BN,096,4.535,114.728,Brunei
+BO,068,-16.29,-63.589,Bolivia
+BR,076,-14.235,-51.925,Brazil
+BS,044,25.034,-77.396,Bahamas
+BT,064,27.514,90.434,Bhutan
+BV,074,-54.423,3.413,Bouvet Island
+BW,072,-22.328,24.685,Botswana
+BY,112,53.71,27.953,Belarus
+BZ,084,17.19,-88.498,Belize
+CA,124,56.13,-106.347,Canada
+CC,166,-12.164,96.871,Cocos [Keeling] Islands
+CD,180,-4.038,21.759,Congo [DRC]
+CF,140,6.611,20.939,Central African Republic
+CG,178,-0.228,15.828,Congo [Republic]
+CH,756,46.818,8.228,Switzerland
+CI,384,7.54,-5.547,Côte d'Ivoire
+CK,184,-21.237,-159.778,Cook Islands
+CL,152,-35.675,-71.543,Chile
+CM,120,7.37,12.355,Cameroon
+CN,156,35.862,104.195,China
+CO,170,4.571,-74.297,Colombia
+CR,188,9.749,-83.753,Costa Rica
+CU,192,21.522,-77.781,Cuba
+CV,132,16.002,-24.013,Cape Verde
+CX,162,-10.448,105.69,Christmas Island
+CY,196,35.126,33.43,Cyprus
+CZ,203,49.817,15.473,Czech Republic
+DE,276,51.166,10.452,Germany
+DJ,262,11.825,42.59,Djibouti
+DK,208,56.264,9.502,Denmark
+DM,212,15.415,-61.371,Dominica
+DO,214,18.736,-70.163,Dominican Republic
+DZ,012,28.034,1.66,Algeria
+EC,218,-1.831,-78.183,Ecuador
+EE,233,58.595,25.014,Estonia
+EG,818,26.821,30.802,Egypt
+EH,732,24.216,-12.886,Western Sahara
+ER,232,15.179,39.782,Eritrea
+ES,724,40.464,-3.749,Spain
+ET,231,9.145,40.49,Ethiopia
+FI,246,61.924,25.748,Finland
+FJ,242,-16.578,179.414,Fiji
+FK,238,-51.796,-59.524,Falkland Islands [Islas Malvinas]
+FM,583,7.426,150.551,Micronesia
+FO,234,61.893,-6.912,Faroe Islands
+FR,250,46.228,2.214,France
+GA,266,-0.804,11.609,Gabon
+GB,826,55.378,-3.436,United Kingdom
+GD,308,12.263,-61.604,Grenada
+GE,268,42.315,43.357,Georgia
+GF,254,3.934,-53.126,French Guiana
+GG,831,49.466,-2.585,Guernsey
+GH,288,7.947,-1.023,Ghana
+GI,292,36.138,-5.345,Gibraltar
+GL,304,71.707,-42.604,Greenland
+GM,270,13.443,-15.31,Gambia
+GN,324,9.946,-9.697,Guinea
+GP,312,16.996,-62.068,Guadeloupe
+GQ,226,1.651,10.268,Equatorial Guinea
+GR,300,39.074,21.824,Greece
+GS,239,-54.43,-36.588,South Georgia and the South Sandwich Islands
+GT,320,15.783,-90.231,Guatemala
+GU,316,13.444,144.794,Guam
+GW,624,11.804,-15.18,Guinea-Bissau
+GY,328,4.86,-58.93,Guyana
+GZ,,31.355,34.309,Gaza Strip
+HK,344,22.396,114.109,Hong Kong
+HM,334,-53.082,73.504,Heard Island and McDonald Islands
+HN,340,15.2,-86.242,Honduras
+HR,191,45.1,15.2,Croatia
+HT,332,18.971,-72.285,Haiti
+HU,348,47.162,19.503,Hungary
+ID,360,-0.789,113.921,Indonesia
+IE,372,53.413,-8.244,Ireland
+IL,376,31.046,34.852,Israel
+IM,833,54.236,-4.548,Isle of Man
+IN,356,20.594,78.963,India
+IO,086,-6.343,71.877,British Indian Ocean Territory
+IQ,368,33.223,43.679,Iraq
+IR,364,32.428,53.688,Iran
+IS,352,64.963,-19.021,Iceland
+IT,380,41.872,12.567,Italy
+JE,832,49.214,-2.131,Jersey
+JM,388,18.11,-77.298,Jamaica
+JO,400,30.585,36.238,Jordan
+JP,392,36.205,138.253,Japan
+KE,404,-0.024,37.906,Kenya
+KG,417,41.204,74.766,Kyrgyzstan
+KH,116,12.566,104.991,Cambodia
+KI,296,-3.37,-168.734,Kiribati
+KM,174,-11.875,43.872,Comoros
+KN,659,17.358,-62.783,Saint Kitts and Nevis
+KP,408,40.34,127.51,North Korea
+KR,410,35.908,127.767,South Korea
+KW,414,29.312,47.482,Kuwait
+KY,136,19.513,-80.567,Cayman Islands
+KZ,398,48.02,66.924,Kazakhstan
+LA,418,19.856,102.495,Laos
+LB,422,33.855,35.862,Lebanon
+LC,662,13.909,-60.979,Saint Lucia
+LI,438,47.166,9.555,Liechtenstein
+LK,144,7.873,80.772,Sri Lanka
+LR,430,6.428,-9.429,Liberia
+LS,426,-29.61,28.234,Lesotho
+LT,440,55.169,23.881,Lithuania
+LU,442,49.815,6.13,Luxembourg
+LV,428,56.88,24.603,Latvia
+LY,434,26.335,17.228,Libya
+MA,504,31.792,-7.093,Morocco
+MC,492,43.75,7.413,Monaco
+MD,498,47.412,28.37,Moldova
+ME,499,42.709,19.374,Montenegro
+MG,450,-18.767,46.869,Madagascar
+MH,584,7.131,171.184,Marshall Islands
+MK,807,41.609,21.745,Macedonia [FYROM]
+ML,466,17.571,-3.996,Mali
+MM,104,21.914,95.956,Myanmar [Burma]
+MN,496,46.862,103.847,Mongolia
+MO,446,22.199,113.544,Macau
+MP,580,17.331,145.385,Northern Mariana Islands
+MQ,474,14.642,-61.024,Martinique
+MR,478,21.008,-10.941,Mauritania
+MS,500,16.742,-62.187,Montserrat
+MT,470,35.937,14.375,Malta
+MU,480,-20.348,57.552,Mauritius
+MV,462,3.203,73.221,Maldives
+MW,454,-13.254,34.302,Malawi
+MX,484,23.635,-102.553,Mexico
+MY,458,4.21,101.976,Malaysia
+MZ,508,-18.666,35.53,Mozambique
+NA,516,-22.958,18.49,Namibia
+NC,540,-20.904,165.618,New Caledonia
+NE,562,17.608,8.082,Niger
+NF,574,-29.041,167.955,Norfolk Island
+NG,566,9.082,8.675,Nigeria
+NI,558,12.865,-85.207,Nicaragua
+NL,528,52.133,5.291,Netherlands
+NO,578,60.472,8.469,Norway
+NP,524,28.395,84.124,Nepal
+NR,520,-0.523,166.932,Nauru
+NU,570,-19.054,-169.867,Niue
+NZ,554,-40.901,174.886,New Zealand
+OM,512,21.513,55.923,Oman
+PA,591,8.538,-80.782,Panama
+PE,604,-9.19,-75.015,Peru
+PF,258,-17.68,-149.407,French Polynesia
+PG,598,-6.315,143.956,Papua New Guinea
+PH,608,12.88,121.774,Philippines
+PK,586,30.375,69.345,Pakistan
+PL,616,51.919,19.145,Poland
+PM,666,46.942,-56.271,Saint Pierre and Miquelon
+PN,612,-24.704,-127.439,Pitcairn Islands
+PR,630,18.221,-66.59,Puerto Rico
+PS,275,31.952,35.233,Palestinian Territories
+PT,620,39.4,-8.224,Portugal
+PW,585,7.515,134.583,Palau
+PY,600,-23.443,-58.444,Paraguay
+QA,634,25.355,51.184,Qatar
+RE,638,-21.115,55.536,Réunion
+RO,642,45.943,24.967,Romania
+RS,688,44.017,21.006,Serbia
+RU,643,61.524,105.319,Russia
+RW,646,-1.94,29.874,Rwanda
+SA,682,23.886,45.079,Saudi Arabia
+SB,090,-9.646,160.156,Solomon Islands
+SC,690,-4.68,55.492,Seychelles
+SD,729,12.863,30.218,Sudan
+SE,752,60.128,18.644,Sweden
+SG,702,1.352,103.82,Singapore
+SH,654,-24.143,-10.031,Saint Helena
+SI,705,46.151,14.995,Slovenia
+SJ,744,77.554,23.67,Svalbard and Jan Mayen
+SK,703,48.669,19.699,Slovakia
+SL,694,8.461,-11.78,Sierra Leone
+SM,674,43.942,12.458,San Marino
+SN,686,14.497,-14.452,Senegal
+SO,706,5.152,46.2,Somalia
+SR,740,3.919,-56.028,Suriname
+ST,678,0.186,6.613,São Tomé and Príncipe
+SV,222,13.794,-88.897,El Salvador
+SY,760,34.802,38.997,Syria
+SZ,748,-26.523,31.466,Swaziland
+TC,796,21.694,-71.798,Turks and Caicos Islands
+TD,148,15.454,18.732,Chad
+TF,260,-49.28,69.349,French Southern Territories
+TG,768,8.62,0.825,Togo
+TH,764,15.87,100.993,Thailand
+TJ,762,38.861,71.276,Tajikistan
+TK,772,-8.967,-171.856,Tokelau
+TL,626,-8.874,125.728,Timor-Leste
+TM,795,38.97,59.556,Turkmenistan
+TN,788,33.887,9.537,Tunisia
+TO,776,-21.179,-175.198,Tonga
+TR,792,38.964,35.243,Turkey
+TT,780,10.692,-61.223,Trinidad and Tobago
+TV,798,-7.11,177.649,Tuvalu
+TW,158,23.698,120.961,Taiwan
+TZ,834,-6.369,34.889,Tanzania
+UA,804,48.379,31.166,Ukraine
+UG,800,1.373,32.29,Uganda
+US,840,37.09,-95.713,United States
+UY,858,-32.523,-55.766,Uruguay
+UZ,860,41.377,64.585,Uzbekistan
+VA,336,41.903,12.453,Vatican City
+VC,670,12.984,-61.287,Saint Vincent and the Grenadines
+VE,862,6.424,-66.59,Venezuela
+VG,092,18.421,-64.64,British Virgin Islands
+VI,850,18.336,-64.896,U.S. Virgin Islands
+VN,704,14.058,108.277,Vietnam
+VU,548,-15.377,166.959,Vanuatu
+WF,876,-13.769,-177.156,Wallis and Futuna
+WS,882,-13.759,-172.105,Samoa
+XK,,42.603,20.903,Kosovo
+YE,887,15.553,48.516,Yemen
+YT,175,-12.828,45.166,Mayotte
+ZA,710,-30.559,22.938,South Africa
+ZM,894,-13.134,27.849,Zambia
+ZW,716,-19.015,29.155,Zimbabwe

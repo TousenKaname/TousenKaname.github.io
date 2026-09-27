@@ -1,0 +1,21 @@
+<!-- Visitor globe: where visitors come from, drawn by
+     assets/js/visitor-globe.js from visitors.json on the `visitor-stats`
+     branch (built by visitor_crawler/ from the Flag Counter below, which
+     records the visits and must stay visible per Flag Counter's terms). -->
+<div class="visitor-globe" id="visitor-globe"
+     data-src="https://raw.githubusercontent.com/{{ site.repository }}/visitor-stats/visitors.json">
+  <div class="visitor-globe__stage">
+    <canvas class="visitor-globe__canvas" role="img" aria-label="Globe showing the countries and regions this site's visitors come from"></canvas>
+    <div class="visitor-globe__tip" hidden></div>
+  </div>
+  <div class="visitor-globe__info">
+    <p class="visitor-globe__eyebrow">Visitors around the world</p>
+    <p class="visitor-globe__totals" hidden></p>
+    <ol class="visitor-globe__top" hidden></ol>
+    <p class="visitor-globe__meta">
+      <span class="visitor-globe__updated"></span>
+      <a href="https://info.flagcounter.com/gqFE"><img src="https://s11.flagcounter.com/mini/gqFE/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    </p>
+  </div>
+</div>
+<script src="assets/js/visitor-globe.js" defer></script>
