@@ -138,7 +138,7 @@
         var last = 0
 
         function markerRadius(country) {
-            return (1.6 + 4.4 * Math.sqrt(country.visitors / max)) * size / 240
+            return Math.max(1.4, (1.6 + 4.4 * Math.sqrt(country.visitors / max)) * size / 190)
         }
 
         function viewCenter() {

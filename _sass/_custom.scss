@@ -271,7 +271,7 @@ h1:before, .anchor:before {
 
     @include breakpoint($medium) {
         flex-direction: row;
-        gap: 2.25em;
+        gap: 1.75em;
     }
 
     [hidden] {
@@ -282,12 +282,12 @@ h1:before, .anchor:before {
 .visitor-globe__stage {
     position: relative;
     flex: 0 0 auto;
-    width: 220px;
+    width: 130px;
     max-width: 100%;
     aspect-ratio: 1;
 
     @include breakpoint($medium) {
-        width: 240px;
+        width: 150px;
     }
 }
 
