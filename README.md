@@ -9,7 +9,7 @@ Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages, based on the
 ## Features
 
 - **Auto-synced Google Scholar data** — a GitHub Action
-  (`.github/workflows/google_scholar_crawler.yaml`) runs daily, crawls my
+  (`.github/workflows/google_scholar_crawler.yaml`) runs every 8 hours, crawls my
   Google Scholar profile, and pushes the results to the `google-scholar-stats`
   branch. The homepage reads that JSON at load time to show the total citation
   badge, per-paper citation counts, and the auto-generated

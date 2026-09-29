@@ -6,7 +6,9 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 8 * * *'
+    # several runs a day: Scholar refuses some runner IPs, so a later run
+    # on a different runner often gets through
+    - cron: '0 */8 * * *'
 
 permissions:
   contents: write
@@ -28,9 +30,8 @@ jobs:
       run: |
         cd ./google_scholar_crawler
         pip3 install -r requirements.txt
-        # hard wall-clock cap: a blocked Scholar session must fail the run
-        # (keeping the previous data) instead of hanging for hours
-        timeout --kill-after=30 900 python3 -u main.py
+        # hard wall-clock cap as a last-resort guard against any hang
+        timeout --kill-after=30 600 python3 -u main.py
         cd ./results
         git init
         git config --local user.name "${GITHUB_ACTOR}"

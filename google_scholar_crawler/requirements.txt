@@ -1,5 +1,2 @@
-scholarly==1.5.1
-# scholarly (even its latest, 1.7.11) imports bibtexparser.bibdatabase, which
-# bibtexparser 2.x removed; our own code does not use bibtexparser directly
-bibtexparser>=1.4,<2
 requests>=2.31
+beautifulsoup4>=4.12

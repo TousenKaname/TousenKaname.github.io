@@ -1,6 +1,6 @@
 """Build the Google Scholar stats JSON for the homepage.
 
-Runs daily (and on pushes to main) via
+Runs every 8 hours (and on pushes to main) via
 .github/workflows/google_scholar_crawler.yaml and force-pushes two JSON
 files to the `google-scholar-stats` branch:
 
@@ -11,10 +11,10 @@ files to the `google-scholar-stats` branch:
 - gs_data_shieldsio.json shields.io endpoint payload for the total-citations
                          badge shown next to the intro paragraph
 
-Citation counts come from the Google Scholar profile page, fetched in a
-subprocess (fetch_scholar.py) under a hard timeout because Scholar
-sometimes blocks CI runners and scholarly then hangs. When that happens,
-the previously published data is reused as the base — the `updated`
+Citation counts come from the Google Scholar profile page, fetched with
+one plain request (fetch_scholar.py). Scholar sometimes refuses CI
+runners (403 / captcha); the request then fails within seconds and logs
+what Scholar returned. When that happens, the previously published data is reused as the base — the `updated`
 timestamp is kept so the page shows the last successful Scholar sync —
 and only the Crossref/arXiv enrichment (authors, venues) is refreshed.
 Each such fallback is flagged with a warning in the Actions UI, and once
@@ -23,26 +23,22 @@ noticed instead of the page silently going stale.
 """
 import json
 import os
-import subprocess
-import sys
 import time
 from datetime import datetime
 
 import requests
 
 from enrich import enrich_publication
+from fetch_scholar import fetch_profile
 
-SCHOLAR_FETCH_TIMEOUT = 300  # seconds before the Scholar subprocess is killed
 STALE_AFTER_DAYS = 3  # failed syncs tolerated before the workflow goes red
 
 
 def fetch_from_scholar():
-    subprocess.run([sys.executable, '-u', 'fetch_scholar.py'],
-                   timeout=SCHOLAR_FETCH_TIMEOUT, check=True)
-    with open('results/scholar_raw.json') as infile:
-        author = json.load(infile)
-    os.remove('results/scholar_raw.json')
+    author = fetch_profile(os.environ['GOOGLE_SCHOLAR_ID'])
     author['updated'] = str(datetime.now())
+    print(f"Scholar profile fetched: {author['name']}, {author['citedby']} citations, "
+          f"{len(author['publications'])} publications", flush=True)
     return author
 
 
