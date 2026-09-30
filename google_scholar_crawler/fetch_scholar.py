@@ -6,15 +6,23 @@ forever with 60-120 s sleeps and ignores set_retries(), so the workflow
 could only time out without saying why. A single request fails in
 seconds and reports exactly what Scholar returned.
 
+Scholar refuses GitHub's runner IPs (HTTP 403), so when a SERPAPI_KEY
+secret is configured the profile comes from SerpAPI's Google Scholar
+Author API instead (https://serpapi.com/google-scholar-author-api),
+which queries Scholar from its own infrastructure. The direct request
+remains the fallback, and the only path when no key is set.
+
 The returned dict mirrors the fields scholarly produced and the rest of
 the pipeline (main.py, assets/js/scholar-stats.js) relies on.
 """
+import os
 import re
 
 import requests
 from bs4 import BeautifulSoup
 
 PROFILE_URL = 'https://scholar.google.com/citations'
+SERPAPI_URL = 'https://serpapi.com/search.json'
 PAGE_SIZE = 100
 HEADERS = {
     'User-Agent': ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 '
@@ -58,7 +66,62 @@ def _parse_publications(page, scholar_id):
     return pubs
 
 
+def _fetch_profile_serpapi(scholar_id, api_key):
+    articles, data = [], None
+    while True:
+        resp = requests.get(SERPAPI_URL, timeout=60, params={
+            'engine': 'google_scholar_author', 'author_id': scholar_id, 'hl': 'en',
+            'num': PAGE_SIZE, 'start': len(articles), 'api_key': api_key})
+        body = resp.json() if resp.headers.get('content-type', '').startswith('application/json') else {}
+        if resp.status_code != 200 or 'error' in body:
+            raise ScholarBlocked(f"SerpAPI: {body.get('error') or f'HTTP {resp.status_code}'}")
+        data = data or body
+        page = body.get('articles', [])
+        articles += page
+        if len(page) < PAGE_SIZE:
+            break
+
+    # table rows: {"citations": {"all": n, "since_YYYY": n}}, then h_index, i10_index
+    table = {k: v for row in data.get('cited_by', {}).get('table', []) for k, v in row.items()}
+
+    def stat(name):
+        values = list(table.get(name, {}).values()) + [0, 0]
+        return int(values[0] or 0), int(values[1] or 0)
+
+    author = data.get('author', {})
+    publications = [{
+        'author_pub_id': art.get('citation_id') or f'{scholar_id}:{index}',
+        'bib': {'title': art.get('title', ''), 'pub_year': str(art.get('year') or '')},
+        'num_citations': int((art.get('cited_by') or {}).get('value') or 0),
+    } for index, art in enumerate(articles)]
+    return {
+        'scholar_id': scholar_id,
+        'name': author.get('name', ''),
+        'affiliation': author.get('affiliations', ''),
+        'interests': [i.get('title', '') for i in author.get('interests', [])],
+        'citedby': stat('citations')[0], 'citedby5y': stat('citations')[1],
+        'hindex': stat('h_index')[0], 'hindex5y': stat('h_index')[1],
+        'i10index': stat('i10_index')[0], 'i10index5y': stat('i10_index')[1],
+        'cites_per_year': {g['year']: g['citations']
+                           for g in data.get('cited_by', {}).get('graph', [])},
+        'publications': publications,
+    }
+
+
 def fetch_profile(scholar_id):
+    api_key = os.environ.get('SERPAPI_KEY')
+    if api_key:
+        try:
+            profile = _fetch_profile_serpapi(scholar_id, api_key)
+            print('Scholar profile fetched via SerpAPI', flush=True)
+            return profile
+        except (ScholarBlocked, requests.RequestException, ValueError) as exc:
+            print(f'::warning::SerpAPI fetch failed ({exc}); trying Scholar directly',
+                  flush=True)
+    return _fetch_profile_direct(scholar_id)
+
+
+def _fetch_profile_direct(scholar_id):
     page = _get_page(scholar_id, 0)
     # citations, h-index, i10-index: each as (all time, since 5 years ago)
     stats = [int(td.get_text(strip=True) or 0)

@@ -1,6 +1,6 @@
 """Build the Google Scholar stats JSON for the homepage.
 
-Runs every 8 hours (and on pushes to main) via
+Runs daily (and on pushes to main) via
 .github/workflows/google_scholar_crawler.yaml and force-pushes two JSON
 files to the `google-scholar-stats` branch:
 

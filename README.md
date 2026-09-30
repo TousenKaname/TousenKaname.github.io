@@ -9,7 +9,7 @@ Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages, based on the
 ## Features
 
 - **Auto-synced Google Scholar data** — a GitHub Action
-  (`.github/workflows/google_scholar_crawler.yaml`) runs every 8 hours, crawls my
+  (`.github/workflows/google_scholar_crawler.yaml`) runs daily, crawls my
   Google Scholar profile, and pushes the results to the `google-scholar-stats`
   branch. The homepage reads that JSON at load time to show the total citation
   badge, per-paper citation counts, and the auto-generated
@@ -36,7 +36,7 @@ Built with [Jekyll](https://jekyllrb.com/) on GitHub Pages, based on the
 | `_sass/_custom.scss` | All site-specific styles (paper boxes, education rows, publication list) |
 | `assets/`, `_sass/` (rest) | Theme CSS/JS/fonts (vendored Minimal Mistakes) |
 | `images/` | Avatar, favicons, school logos (`logo-*`), publication figures (`pub-*`) |
-| `google_scholar_crawler/` | The crawler run by the GitHub Action (uses the `GOOGLE_SCHOLAR_ID` repo secret) |
+| `google_scholar_crawler/` | The crawler run by the GitHub Action (uses the `GOOGLE_SCHOLAR_ID` repo secret, plus `SERPAPI_KEY` if set, since Scholar blocks GitHub's runners) |
 | `_includes/visitor-globe.html`, `assets/js/visitor-globe.js` | The visitor globe footer and its renderer |
 | `visitor_crawler/` | Builds `visitors.json` from the Flag Counter stats page; `countries.csv` maps country codes to map ids and centroids |
 

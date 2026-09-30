@@ -6,9 +6,8 @@ on:
     branches:
       - main
   schedule:
-    # several runs a day: Scholar refuses some runner IPs, so a later run
-    # on a different runner often gets through
-    - cron: '0 */8 * * *'
+    # daily keeps SerpAPI usage (~30 calls/month) inside its free tier
+    - cron: '0 8 * * *'
 
 permissions:
   contents: write
@@ -41,6 +40,8 @@ jobs:
         git push "${remote_repo}" HEAD:google-scholar-stats --force
       env:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        # optional; Scholar blocks GitHub's runners, SerpAPI fetches it for us
+        SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
     # main.py falls back to the last published data when Scholar can't be
     # fetched; fail loudly once that has lasted a few days
     - name: Check Scholar sync
