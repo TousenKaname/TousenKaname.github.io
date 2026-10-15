@@ -22,6 +22,8 @@ import html
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
@@ -35,11 +37,38 @@ ROW_RE = re.compile(
 TOTAL_RE = re.compile(r'Countries \d+ - \d+ of ([\d,]+)')
 
 
+# Flag Counter answers 403 to any User-Agent that looks like a bot (the
+# old 'visitor-globe-crawler/1.0' started failing on 2026-10-13), so
+# present as an ordinary browser.
+USER_AGENT = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+              '(KHTML, like Gecko) Chrome/129.0 Safari/537.36')
+
+
+# When overloaded (or hit too often) Flag Counter returns HTTP 200 with a
+# short "Server too busy. Please try again in 5 minutes." body instead of
+# the stats page, so retry that, and transient HTTP errors, after a pause.
+ATTEMPTS = 3
+RETRY_DELAY = 90  # seconds; the job's timeout-minutes leaves room for this
+
+
 def fetch_page(url):
-    request = urllib.request.Request(
-        url, headers={'User-Agent': 'visitor-globe-crawler/1.0 (+https://tousenkaname.github.io)'})
-    with urllib.request.urlopen(request, timeout=30) as resp:
-        return resp.read().decode('utf-8', errors='replace')
+    request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    for attempt in range(1, ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as resp:
+                page = resp.read().decode('utf-8', errors='replace')
+            if 'Server too busy' not in page:
+                return page
+            problem = 'Flag Counter says the server is too busy'
+        except urllib.error.HTTPError as err:
+            if err.code not in (403, 429) and err.code < 500:
+                raise
+            problem = f'HTTP {err.code} from Flag Counter'
+        if attempt == ATTEMPTS:
+            raise SystemExit(f'{problem}; giving up after {ATTEMPTS} attempts')
+        print(f'::warning::{problem}; retrying in {RETRY_DELAY}s '
+              f'(attempt {attempt}/{ATTEMPTS})', flush=True)
+        time.sleep(RETRY_DELAY)
 
 
 def load_country_table():
