@@ -30,10 +30,16 @@ from datetime import datetime, timezone
 COUNTER_ID = os.environ.get('FLAG_COUNTER_ID', 'gqFE')
 COUNTRIES_URL = f'https://s01.flagcounter.com/countries/{COUNTER_ID}/'
 
-# one table row per country: code, display name, visitor count
+# One table row per country: display name, visitor count, and the
+# per-country chart link (/detail30/<code>/...), which carries the
+# two-letter code. The name used to link to /factbook/<code>/ until
+# Flag Counter switched those links to Wikipedia on 2026-10-17, so the
+# code is taken from the chart link instead, and whitespace/attributes
+# are matched loosely to survive small markup changes.
 ROW_RE = re.compile(
-    r'<a href=/factbook/(\w\w)/\w+ style="text-decoration:none;"><u>([^<]+)</u></a>'
-    r'</font></td><td width=1%><font face=arial size=2>([\d,]+)</font>')
+    r'<u>([^<]+)</u></a>\s*</font>\s*</td>\s*'
+    r'<td[^>]*>\s*<font[^>]*>\s*([\d,]+)\s*</font>\s*</td>\s*'
+    r'<td[^>]*>\s*<a href="?/detail\d*/(\w\w)/')
 TOTAL_RE = re.compile(r'Countries \d+ - \d+ of ([\d,]+)')
 
 
@@ -48,7 +54,7 @@ USER_AGENT = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
 # short "Server too busy. Please try again in 5 minutes." body instead of
 # the stats page, so retry that, and transient HTTP errors, after a pause.
 ATTEMPTS = 3
-RETRY_DELAY = 90  # seconds; the job's timeout-minutes leaves room for this
+RETRY_DELAY = 150  # seconds; two waits ~ the 5 minutes it asks for, within timeout-minutes
 
 
 def fetch_page(url):
@@ -78,7 +84,7 @@ def load_country_table():
 
 def parse_countries(page, table):
     countries = []
-    for code, name, visitors in ROW_RE.findall(page):
+    for name, visitors, code in ROW_RE.findall(page):
         entry = {'code': code.upper(),
                  'name': html.unescape(name).strip(),
                  'visitors': int(visitors.replace(',', ''))}
@@ -94,7 +100,9 @@ def parse_countries(page, table):
 page = fetch_page(COUNTRIES_URL)
 countries = parse_countries(page, load_country_table())
 if not countries:
-    raise SystemExit('No country rows found; the Flag Counter page layout may have changed')
+    snippet = ' '.join(page[:300].split())
+    raise SystemExit('No country rows found; the Flag Counter page layout may have changed. '
+                     f'Page starts with: {snippet}')
 
 total_match = TOTAL_RE.search(page)
 if total_match and int(total_match.group(1).replace(',', '')) != len(countries):
