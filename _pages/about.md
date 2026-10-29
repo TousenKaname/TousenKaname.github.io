@@ -114,6 +114,7 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 - Frontiers in Radiology
 
 **Conference Reviewer**
+- The 30th International Conference on Information Processing in Medical Imaging (IPMI 2027)
 - The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
 
 <span class='anchor' id='-invited-talks'></span>
