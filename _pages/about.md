@@ -66,7 +66,7 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub-seeeeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G`, Liu F. Your Vision Foundation Model Is Secretly an EEG Foundation Model. Submitted to CVPR 2027.
+-	`Wang G`, Liu F. Your Vision Foundation Model Is Secretly an EEG Foundation Model.
 
 </div>
 </div>
