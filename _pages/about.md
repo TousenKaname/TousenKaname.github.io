@@ -63,10 +63,6 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 </div>
 </div>
 
-{% comment %}
-Under review (CVPR 2027 and INFORMS Journal on Data Science); hidden until the
-preprints are public. Delete this comment/endcomment pair to show both papers again.
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub-seeeeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -74,6 +70,10 @@ preprints are public. Delete this comment/endcomment pair to show both papers ag
 
 </div>
 </div>
+
+{% comment %}
+Under review (INFORMS Journal on Data Science); hidden until the preprint is
+public. Delete this comment/endcomment pair to show it again.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub-spice.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
