@@ -63,10 +63,10 @@ Guoan Wang is a Ph.D. student in the Department of Industrial and Systems Engine
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub-seeeeg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/pub-seeeeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Wang G`, Liu F. Your Vision Foundation Model Is Secretly an EEG Foundation Model.
+-	`Wang G`, Liu F. Your Vision Foundation Model Is Secretly an EEG Foundation Model[J]. arXiv preprint arXiv:2611.17031, 2026. [[PDF]](https://arxiv.org/pdf/2611.17031)
 
 </div>
 </div>
@@ -135,6 +135,7 @@ public. Delete this comment/endcomment pair to show it again.
 - Frontiers in Radiology
 
 **Conference Reviewer**
+- The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2027)
 - The 30th International Conference on Information Processing in Medical Imaging (IPMI 2027)
 - The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
 
