@@ -135,7 +135,7 @@ public. Delete this comment/endcomment pair to show it again.
 - Frontiers in Radiology
 
 **Conference Reviewer**
-- The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2027)
+- The 40th IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2027)
 - The 30th International Conference on Information Processing in Medical Imaging (IPMI 2027)
 - The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)
 
